@@ -37,7 +37,7 @@ namespace wstd
 
 	template <int N>
 	struct element<N, tuple<>> {
-		static_assert(0 <= N, "Index outside of tuple!");
+		static_assert(0 > N, "Index outside of tuple!");
 	};
 
 	template <int N, typename __this_type, typename ... __args_type>
