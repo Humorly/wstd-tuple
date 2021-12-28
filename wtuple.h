@@ -10,7 +10,6 @@ namespace wstd
 	{
 	public:
 		tuple() {}
-		~tuple() {}
 	};
 
 	template <typename __this_type, typename ... __args_type>
@@ -21,7 +20,6 @@ namespace wstd
 		{
 			value_ = val;
 		}
-		~tuple() {}
  
 		__this_type get_value()
 		{
